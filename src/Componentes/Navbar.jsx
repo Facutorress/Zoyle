@@ -19,14 +19,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-xl z-10 py-4"> {/* Aumentada la sombra */}
-<div className="custom-navbar-width mx-auto px-4 flex justify-between items-center">
+    <nav className="bg-white shadow-xl z-10 py-2 md:py-4">
+      <div className="custom-navbar-width mx-auto px-2 md:px-4 flex justify-between items-center">
+        <img src={logo} alt="Logo de la empresa" className="h-10 sm:h-12 md:h-16 w-auto ml-1 sm:ml-2 md:ml-12" />
 
-      <img src={logo} alt="Logo de la empresa" className="h-16 w-auto ml-12" />
-
-        <div className="flex justify-center mr-8">
+        <div className="flex justify-center space-x-1 sm:space-x-2 md:space-x-4">
           <ScrollLink 
-            className="text-black hover:text-gray-600 px-4 transition duration-300 font-semibold text-lg font-poppins"
+            className="text-black hover:text-gray-600 px-3 sm:px-6 transition duration-300 font-semibold text-sm sm:text-lg font-poppins"
             activeClass="text-gray-600 border-b-2 border-black"
             to="home"
             spy={true}
@@ -38,7 +37,7 @@ const Navbar = () => {
             Home
           </ScrollLink>
           <ScrollLink 
-            className="text-black hover:text-gray-600 px-4 transition duration-300 font-semibold text-lg font-poppins"
+            className="text-black hover:text-gray-600 px-3 sm:px-6 transition duration-300 font-semibold text-sm sm:text-lg font-poppins"
             activeClass="text-gray-600 border-b-2 border-black"
             to="aboutus"
             spy={true}
@@ -50,13 +49,13 @@ const Navbar = () => {
               About us
           </ScrollLink>
           <RouterLink 
-            className="text-black hover:text-gray-600 px-4 transition duration-300 font-semibold text-lg font-poppins"
+            className="text-black hover:text-gray-600 px-3 sm:px-6 transition duration-300 font-semibold text-sm sm:text-lg font-poppins"
             to="/shop"
           >
             Shop
           </RouterLink>
           <ScrollLink 
-            className="text-black hover:text-gray-600 px-4 transition duration-300 font-semibold text-lg font-poppins"
+            className="text-black hover:text-gray-600 px-3 sm:px-6 transition duration-300 font-semibold text-sm sm:text-lg font-poppins"
             activeClass="text-gray-600 border-b-2 border-black"
             to="contact"
             spy={true}

@@ -2,6 +2,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 
 
 function Contact() {
@@ -56,9 +57,22 @@ function Contact() {
         .required('El mensaje es obligatorio')
     }),
   });
+  const enviarEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_bsm3s2a', 'template_hqm8b6h', e.target, 'AmUXdfMze8_5aWuOh')
+      .then((result) => {
+          console.log(result.text);
+          formik.resetForm(); // Resetea el formulario
+          alert('Mensaje enviado con éxito!'); // Muestra un mensaje de alerta
+      }, (error) => {
+          console.log(error.text);
+          alert('Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.');
+      });
+};
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <motion.section 
         className="bg-white p-8"
         ref={formRef}
@@ -67,7 +81,7 @@ function Contact() {
         variants={slideFromRight}
       >
       <h2 className="text-4xl font-bold mb-16 text-left text-gray-800 border-b-2 border-black pb-2">CONTACT US</h2>
-      <form className="space-y-4">
+      <form className="space-y-4" onSubmit={enviarEmail}>
         <input 
           type="text" 
           placeholder="Name" 
@@ -112,6 +126,7 @@ function Contact() {
         {formik.touched.mensaje && formik.errors.mensaje ? <div className="text-red-500 text-sm">{formik.errors.mensaje}</div> : null}
 
         <button type="submit" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">Enviar</button>
+        
       </form>
 
     </motion.section>
