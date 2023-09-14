@@ -27,17 +27,18 @@ const Home = () => {
   return (
     <div className="text-black min-h-screen font-sans">
       <section id="welcome" className="py-8 px-4 md:py-16 md:px-8 flex flex-col md:flex-row">
-        <motion.div 
-          className="w-full md:w-3/5 pr-8 mb-8 md:mb-0"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.7, ease: "easeOut" }}
-        >
-          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800 border-b-2 border-black pb-2 max-w-7xl mx-auto">WELCOME TO OUR PAGE</h1>
-          <p className="text-base md:text-lg text-justify-center font-poppins bg-white p-4 rounded shadow mt-4">In today's globalized world, shopping should know no borders. At Amazon International, we've curated a selection of the finest products from every corner of the globe, bringing them directly to your doorstep. Whether you're searching for unique handcrafted goods from remote villages or the latest tech gadgets from leading global brands, our platform ensures you have access to the world's best without ever leaving your home.</p>
-          <p className="text-base md:text-lg text-justify-center font-poppins bg-white p-4 pt-8 md:pt-12 rounded shadow mt-4">  Navigating the vast world of online shopping can be daunting, but with Amazon International, it's a breeze. Our intuitive interface, coupled with a robust search engine, filters, and customer reviews, ensures you find exactly what you're looking for every time. Navigating the vast world of online shopping can be daunting, but with Amazon International, it's a breeze. Our intuitive interface, coupled with a robust search engine, filters, and customer reviews, ensures you find exactly what you're looking for every time.</p>
-        </motion.div>
-        <div className="w-full md:w-2/6 pl-0 md:pl-6 pt-8 md:pt-12 ml-0 md:ml-16" style={{ height: 'auto', maxHeight: '700px' }}>
+      <motion.div 
+  className="w-full md:w-3/5 pr-8 mb-8 md:mb-0 pl-8 md:pl-8 max-w-xl md:max-w-7xl mx-auto"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.7, ease: "easeOut" }}
+>
+  <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800 border-b-2 border-black pb-2 mx-auto">WELCOME TO OUR PAGE</h1>
+  <p className="text-base md:text-lg text-justify-center font-poppins bg-white p-4 rounded shadow mt-4">In today's globalized world, shopping should know no borders. At Amazon International, we've curated a selection of the finest products from every corner of the globe, bringing them directly to your doorstep. Whether you're searching for unique handcrafted goods from remote villages or the latest tech gadgets from leading global brands, our platform ensures you have access to the world's best without ever leaving your home.</p>
+  <p className="text-base md:text-lg text-justify-center font-poppins bg-white p-4 pt-8 md:pt-12 rounded shadow mt-4">Navigating the vast world of online shopping can be daunting, but with Amazon International, it's a breeze. Our intuitive interface, coupled with a robust search engine, filters, and customer reviews, ensures you find exactly what you're looking for every time. Navigating the vast world of online shopping can be daunting, but with Amazon International, it's a breeze. Our intuitive interface, coupled with a robust search engine, filters, and customer reviews, ensures you find exactly what you're looking for every time.</p>
+</motion.div>
+
+        <div className="w-full md:w-2/6 pr-4 md:pl-6 pt-8 md:pt-12 ml-0 md:ml-16" style={{ height: 'auto', maxHeight: '700px' }}>
           <Slider {...settings}>
         <div>
             <img src={imagen1} alt="Imagen 1" className="w-full h-full object-cover shadow-lg border-2 border-black" />
