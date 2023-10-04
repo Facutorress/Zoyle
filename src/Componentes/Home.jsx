@@ -1,9 +1,9 @@
 import React from 'react';
 import Form from './Form';
-import imagen1 from '../assets/PhotoReal_En_un_fondo_de_tonos_pastel_una_deslumbrante_varieda_2.jpg';
-import imagen2 from '../assets/PhotoReal_Sobre_un_fondo_blanco_inmaculado_una_serie_de_produc_3.jpg'
-import imagen3 from '../assets/PhotoReal_Sobre_un_fondo_de_tonos_tierra_una_coleccin_meticulo_1.jpg'
-import imagen4 from '../assets/PhotoReal_Sobre_un_fondo_de_tonos_tierra_una_coleccin_meticulo_2.jpg'
+import imagen3 from '../assets/Diseño sin título (4).png';
+import imagen1 from '../assets/Diseño sin título (5).png'
+import imagen2 from '../assets/Diseño sin título (6).png'
+import imagen4 from '../assets/Diseño sin título (9).png'
 import Otro from './Mision';
 import { motion } from 'framer-motion';
 import Footer from './Footer';
@@ -38,7 +38,9 @@ const Home = () => {
   <p className="text-base md:text-lg text-justify-center font-poppins bg-white p-4 pt-8 md:pt-12 rounded shadow mt-4">Navigating the vast world of online shopping can be daunting, but with Amazon International, it's a breeze. Our intuitive interface, coupled with a robust search engine, filters, and customer reviews, ensures you find exactly what you're looking for every time. Navigating the vast world of online shopping can be daunting, but with Amazon International, it's a breeze. Our intuitive interface, coupled with a robust search engine, filters, and customer reviews, ensures you find exactly what you're looking for every time.</p>
 </motion.div>
 
-        <div className="w-full md:w-2/6 pr-4 md:pl-6 pt-8 md:pt-12 ml-0 md:ml-16" style={{ height: 'auto', maxHeight: '700px' }}>
+<div className="w-full md:w-2/6 pr-4 md:pl-6 ml-0 md:ml-16" style={{ height: 'auto', maxHeight: '700px' }}>
+
+        <h1 className="text-3xl mb-2 md:text-4xl font-bold text-center text-gray-800 ">NOW ON SALE!</h1>
           <Slider {...settings}>
         <div>
             <img src={imagen1} alt="Imagen 1" className="w-full h-full object-cover shadow-lg border-2 border-black" />
