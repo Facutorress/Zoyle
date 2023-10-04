@@ -1,9 +1,9 @@
 import React from 'react';
 import Form from './Form';
 import imagen3 from '../assets/Diseño sin título (4).png';
-import imagen1 from '../assets/Diseño sin título (5).png'
+import imagen1 from '../assets/Diseño sin título (11).png'
 import imagen2 from '../assets/Diseño sin título (6).png'
-import imagen4 from '../assets/Diseño sin título (11).png'
+import imagen4 from '../assets/Diseño sin título (9).png'
 import Otro from './Mision';
 import { motion } from 'framer-motion';
 import Footer from './Footer';
