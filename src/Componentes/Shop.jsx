@@ -21,7 +21,7 @@ const Shop = () => {
 
   return (
     <div id="shop" className="p-8">
-      <h2 className="text-2xl font-bold text-black mb-6">In wich countrys are we located?</h2>
+      <h1 className="text-2xl font-bold text-black mb-6">In wich countrys are we located?</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {countries.map(country => (
           <CountryCard key={country.id} country={country} />
