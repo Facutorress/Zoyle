@@ -1,9 +1,11 @@
 import React from 'react';
 import Form from './Form';
-import imagen3 from '../assets/Diseño sin título (4).png';
-import imagen1 from '../assets/Diseño sin título (11).png'
-import imagen2 from '../assets/Diseño sin título (6).png'
-import imagen4 from '../assets/Diseño sin título (9).png'
+import imagen3 from '../assets/Diseño sin título (16).png';
+import imagen6 from '../assets/Diseño sin título (11).png'
+import imagen5 from '../assets/Diseño sin título (6).png'
+import imagen4 from '../assets/Diseño sin título (13).png'
+import imagen1 from '../assets/Diseño sin título (14).png'
+import imagen2 from '../assets/Diseño sin título (15).png'
 import Otro from './Mision';
 import { motion } from 'framer-motion';
 import Footer from './Footer';
@@ -53,6 +55,12 @@ const Home = () => {
         </div>
         <div>
             <img src={imagen4} alt="Imagen 4" className="w-full h-full object-cover shadow-lg border-2 border-black" />
+        </div>
+        <div>
+            <img src={imagen5} alt="Imagen 5" className="w-full h-full object-cover shadow-lg border-2 border-black" />
+        </div>
+        <div>
+            <img src={imagen6} alt="Imagen 6" className="w-full h-full object-cover shadow-lg border-2 border-black" />
         </div>
     </Slider>
 </div>
