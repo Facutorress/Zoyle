@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import imagen1 from '../assets/PhotoReal_A_bustling_airport_cargo_terminal_where_workers_are_2.jpg';
-import imagen2 from '../assets/PhotoReal_An_ecstatic_person_eyes_wide_with_surprise_and_delig_1.jpg';
+import imagen2 from '../assets/PhotoReal_An_ecstatic_person_eyes_wide_with_surprise_and_delig_2.jpg';
 import MapLines from './MapLines';
 
 const Aboutus = () => {
